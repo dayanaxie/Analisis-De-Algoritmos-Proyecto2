@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <main>
+        <section class="contenedor">
+            <section class="contenedorParametros">
+                <h2>Parámetros</h2>
+                <form id="parametros">
+                    <div class="parametro">
+                        <label for="imagenObjetivo">Imagen Objetivo:</label>
+                        <input type="file" id="imagenObjetivo" accept="image/*">
+                    </div>
+            
+                    <div class="parametro">
+                        <label for="maxGeneraciones">Generaciones Máximas:</label>
+                        <input type="number" id="maxGeneraciones" min="1" value="100">
+                    </div>
+            
+                    <div class="parametro">
+                        <label for="individuosPorGeneracion">Individuos por Generación:</label>
+                        <input type="number" id="individuosPorGeneracion" min="1" value="50">
+                    </div>
+            
+                    <div class="parametro">
+                        <label for="porcentajeSeleccion">Porcentaje de Selección:</label>
+                        <input type="number" id="porcentajeSeleccion" min="0" max="100" value="50">
+                    </div>
+            
+                    <div class="parametro">
+                        <label for="porcentajeMutacion">Porcentaje de Mutación:</label>
+                        <input type="number" id="porcentajeMutacion" min="0" max="100" value="10">
+                    </div>
+            
+                    <div class="parametro">
+                        <label for="porcentajeCruce">Porcentaje de Cruce:</label>
+                        <input type="number" id="porcentajeCruce" min="0" max="100" value="40">
+                    </div>
+
+                    <div class="parametro">
+                        <label for="porcentajeCruce">Grosor de linea:</label>
+                        <input type="number" id="grosorLinea" min="1" max="5" value="1">
+                    </div>
+
+                    <div class="parametro">
+                        <input type="submit" value="Cargar Datos">
+                       
+                    </div>
+                </form>
+            </section>            
+            <section class="contenedorEstadisticas">
+                <h2>Estadísticas</h2>
+                <div id="tiempoTotal">Tiempo Total: 0 segundos</div>
+                <div id="tiempoPromedio">Tiempo Promedio: 0 segundos</div>
+                <canvas id="graficoFitness" width="400" height="100"></canvas>
+            </section>
+        </section>
+        <section class="contenedor">
+            <section class="contenedorObjetivo">
+                <h2>Imagen Objetivo</h2>
+                <div class="inputoutput">
+                    <canvas id="canvasOutput" ></canvas>
+                    
+                </div>
+            </section>
+            <section class="contenedorCanva">
+                <h2>Generador OpenCV</h2>
+                <div class="inputoutput">
+                    <canvas id="canvasOutput2" ></canvas>
+                    
+                    
+                </div>
+            </section>
+        </section>
+    </main>
+    <script defer src="./proyecto2.js"></script>
+    <script async src="https://docs.opencv.org/3.4.0/opencv.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+  main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.contenedor {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    background-color: aquamarine;
+    flex-direction: column;
+    background-color: blueviolet;   
+}
+
+.contenedorParametros {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(173, 173, 241);
+}
+
+.contenedorEstadisticas {
+    width: 100%;
+    height: 50%;
+    background-color: #9c9cf4;
+}
+
+.inputOutput {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#canvasOutput {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 30%;  
+}
+
+#canvasOutput2 {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 30%;   
+}
+
+.contenedorObjetivo{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(47, 141, 160);   
+}
+
+.contenedorCanva{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(133, 69, 186);
+}
+
+#tiempoTotal {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #000000;
+}
+
+#tiempoPromedio {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #000000;
+}
